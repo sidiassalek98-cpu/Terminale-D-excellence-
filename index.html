@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terminale D Excellence</title>
+<meta name="description" content="Cours privés, exercices et révisions de Terminale D au Niger.">
+<style>
+:root {
+  --bleu:#102b46;
+  --bleu2:#1769aa;
+  --or:#ffc857;
+  --fond:#f3f7fc;
+  --vert:#16845b;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  margin:0;
+  font-family:Arial,sans-serif;
+  color:#172536;
+  background:var(--fond);
+  line-height:1.6;
+}
+header {
+  background:var(--bleu);
+  color:white;
+  padding:16px 5%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:15px;
+  flex-wrap:wrap;
+}
+.logo { font-size:21px;font-weight:bold; }
+nav { display:flex;gap:15px;flex-wrap:wrap; }
+nav a { color:white;text-decoration:none; }
+.hero {
+  padding:65px 7%;
+  background:linear-gradient(135deg,#102b46,#1769aa);
+  color:white;
+  text-align:center;
+}
+.hero h1 { font-size:clamp(32px,6vw,55px);line-height:1.15; }
+.hero h1 span { color:var(--or); }
+.hero p { max-width:650px;margin:20px auto; }
+.btn {
+  display:inline-block;
+  padding:12px 19px;
+  margin:6px;
+  border-radius:9px;
+  text-decoration:none;
+  font-weight:bold;
+  background:var(--or);
+  color:#172536;
+}
+.btn-blue { background:var(--bleu2);color:white; }
+.btn-green { background:var(--vert);color:white; }
+section { padding:48px 6%; }
+h2 { color:var(--bleu);text-align:center;font-size:30px; }
+.intro { text-align:center;color:#617286;max-width:720px;margin:0 auto 28px; }
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+.card {
+  background:white;
+  padding:24px;
+  border-radius:16px;
+  border:1px solid #dce5ef;
+  box-shadow:0 5px 18px #102b460c;
+}
+.card h3 { color:var(--bleu); }
+.icone { font-size:36px; }
+.tag {
+  display:inline-block;
+  background:#e8f4fb;
+  color:#1769aa;
+  border-radius:20px;
+  padding:4px 10px;
+  font-size:13px;
+}
+.paiement {
+  background:white;
+  border:1px solid #dce5ef;
+  border-radius:16px;
+  padding:25px;
+  max-width:800px;
+  margin:auto;
+}
+.notice {
+  background:#fff5d8;
+  border:1px solid #f2d58c;
+  border-radius:10px;
+  padding:13px;
+}
+.contact {
+  background:var(--bleu);
+  color:white;
+  text-align:center;
+}
+.contact h2 { color:white; }
+footer {
+  background:#091b2b;
+  color:white;
+  text-align:center;
+  padding:22px;
+}
+.whatsapp {
+  position:fixed;
+  right:15px;
+  bottom:15px;
+  border-radius:30px;
+  padding:12px 16px;
+  background:#20bd6b;
+  color:white;
+  font-weight:bold;
+  text-decoration:none;
+}
+@media(max-width:550px) {
+  header { justify-content:center;text-align:center; }
+  nav { justify-content:center; }
+  .hero { padding:45px 5%; }
+  section { padding:38px 5%; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🎓 Terminale D Excellence</div>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#matieres">Matières</a>
+    <a href="#cours">Cours privés</a>
+    <a href="#paiement">Paiement</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="accueil">
+  <p>🇳🇪 L'excellence scientifique au Niger</p>
+  <h1>Réussis ta <span>Terminale D</span> avec méthode !</h1>
+  <p>
+    Des cours clairs, des fiches de révision et des exercices
+    pour progresser en Mathématiques, Physique-Chimie et SVT.
+    Préparons ensemble ton succès au baccalauréat.
+  </p>
+  <a class="btn" href="#matieres">Découvrir les matières</a>
+  <a class="btn btn-blue"
+     href="https://wa.me/22794259533?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20Terminale%20D%20Excellence">
+     Nous contacter
+  </a>
+</section>
+
+<section id="matieres">
+  <h2>Nos matières scientifiques</h2>
+  <p class="intro">
+    Comprends tes leçons, maîtrise les méthodes et entraîne-toi
+    avec des exercices adaptés à la Terminale D.
+  </p>
+
+  <div class="grid">
+    <article class="card">
+      <div class="icone">📐</div>
+      <span class="tag">Logique et calcul</span>
+      <h3>Mathématiques</h3>
+      <p>
+        Fonctions, limites, dérivées, primitives, nombres complexes
+        et résolution d'exercices.
+      </p>
+      <a class="btn btn-blue"
+         href="https://wa.me/22794259533?text=Je%20souhaite%20les%20cours%20de%20Math%C3%A9matiques">
+         Demander les cours
+      </a>
+    </article>
+
+    <article class="card">
+      <div class="icone">⚛️</div>
+      <span class="tag">Sciences physiques</span>
+      <h3>Physique-Chimie</h3>
+      <p>
+        Mécanique, électricité, vibrations, propagation,
+        champ magnétique et chimie.
+      </p>
+      <a class="btn btn-blue"
+         href="https://wa.me/22794259533?text=Je%20souhaite%20les%20cours%20de%20Physique-Chimie">
+         Demander les cours
+      </a>
+    </article>
+
+    <article class="card">
+      <div class="icone">🧬</div>
+      <span class="tag">Sciences naturelles</span>
+      <h3>SVT</h3>
+      <p>
+        Leçons structurées, schémas, notions essentielles
+        et entraînements sur le programme.
+      </p>
+      <a class="btn btn-blue"
+         href="https://wa.me/22794259533?text=Je%20souhaite%20les%20cours%20de%20SVT">
+         Demander les cours
+      </a>
+    </article>
+  </div>
+</section>
+
+<section id="cours" style="background:#eaf1f8">
+  <h2>Nos services éducatifs</h2>
+  <p class="intro">
+    Des ressources pour apprendre régulièrement et préparer
+    efficacement le baccalauréat.
+  </p>
+  <div class="grid">
+    <article class="card">
+      <div class="icone">📘</div>
+      <h3>Fiches de révision</h3>
+      <p>Les notions importantes organisées pour faciliter la révision.</p>
+    </article>
+    <article class="card">
+      <div class="icone">✍️</div>
+      <h3>Exercices corrigés</h3>
+      <p>Des corrections expliquées étape par étape.</p>
+    </article>
+    <article class="card">
+      <div class="icone">🎯</div>
+      <h3>Préparation au bac</h3>
+      <p>Entraînement, méthodologie et révisions ciblées.</p>
+    </article>
+    <article class="card">
+      <div class="icone">👨‍🏫</div>
+      <h3>Cours privés</h3>
+      <p>Contacte le professeur pour connaître les horaires et les tarifs.</p>
+      <a class="btn btn-blue"
+         href="https://wa.me/22794259533?text=Bonjour%2C%20je%20souhaite%20conna%C3%AEtre%20les%20tarifs%20des%20cours%20priv%C3%A9s">
+         Demander les tarifs
+      </a>
+    </article>
+  </div>
+</section>
+
+<section id="paiement">
+  <h2>Paiement des cours</h2>
+  <p class="intro">
+    Demande les modalités officielles avant de payer.
+  </p>
+  <div class="paiement">
+    <h3>💳 Moyens de paiement disponibles</h3>
+    <p><strong>NiTA et Amana</strong></p>
+    <p>
+      Contacte le professeur pour confirmer le montant,
+      le bénéficiaire et les instructions de paiement.
+    </p>
+    <a class="btn btn-green"
+       href="https://wa.me/22794259533?text=Bonjour%2C%20je%20souhaite%20confirmer%20les%20modalit%C3%A9s%20de%20paiement">
+       Confirmer sur WhatsApp
+    </a>
+    <div class="notice">
+      🔒 Ne partage jamais ton code PIN, ton mot de passe
+      ou tes codes de confirmation. Vérifie toujours le
+      bénéficiaire avant de valider une transaction.
+    </div>
+    <p>
+      Le paiement automatique et le déblocage automatique
+      des cours ne sont pas encore configurés.
+    </p>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Prêt à progresser ?</h2>
+  <p>Terminale D Excellence — apprendre, pratiquer, réussir.</p>
+  <p>Contact professeur : <strong>+227 94 25 95 33</strong></p>
+  <a class="btn"
+     href="https://wa.me/22794259533?text=Bonjour%2C%20je%20viens%20du%20site%20Terminale%20D%20Excellence">
+     Écrire sur WhatsApp
+  </a>
+</section>
+</main>
+
+<footer>
+  <p>© <span id="annee"></span> Terminale D Excellence · Niger</p>
+  <p>La réussite se prépare avec méthode et persévérance.</p>
+</footer>
+
+<a class="whatsapp"
+   href="https://wa.me/22794259533?text=Bonjour%2C%20je%20viens%20du%20site%20Terminale%20D%20Excellence"
+   aria-label="Contacter sur WhatsApp">WhatsApp ↗</a>
+
+<script>
+document.getElementById("annee").textContent =
+  new Date().getFullYear();
+</script>
+</body>
+</html>
